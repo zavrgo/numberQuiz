@@ -1,0 +1,154 @@
+.form {
+    background: rgb(132, 207, 255);
+    background: linear-gradient(90deg, rgba(132, 207, 255, 1) 5%, rgba(145, 255, 166, 1) 35%, rgba(255, 198, 122, 1) 50%, rgba(195, 255, 176, 1) 65%, rgba(195, 255, 254, 1) 95%);
+}
+
+.body {
+    text-align: center;
+    box-shadow: 0px 0px 15px;
+    width: 500px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    padding-top: 10px;
+}
+
+.body button {
+    font-size: 20px;
+    padding: 0 15px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.459);
+    font-family: 'Roboto Slab', serif;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.mainButton:hover {
+    border: 2px solid white;
+
+}
+
+.body input {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    font-size: 15px;
+    z-index: 9;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+    width: 200px;
+}
+
+.formWin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(3600deg) scale(0);
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px black;
+    z-index: 10;
+}
+
+.formWin button {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-shadow: 0 0 20px black;
+}
+
+#img {
+    height: calc(100% - 65px);
+}
+
+.body h1 {
+    box-shadow: 0 0 20px black;
+    background-color: rgba(137, 138, 138, 0.285);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.527);
+    border-radius: 40px;
+    width: 250px;
+    margin: auto;
+    font-size: 30px;
+    color: white;
+
+}
+
+.lives {
+    color: red;
+    -webkit-text-stroke: 1px black;
+
+}
+
+
+.info {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    width: 120px;
+}
+
+.info button {
+    background: none;
+    border: none;
+    box-shadow: none;
+
+}
+
+#sm input {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    
+
+}
+
+#sm label {
+    vertical-align: middle;
+    line-height: 30px;
+
+}
+
+#BackButton {
+    width: 40px;
+    height: 40px;
+    background: none;
+    background-image: url("arrow-forward.svg");
+    background-size: contain;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: none;
+    opacity: 0.4;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#BackButton:hover {
+    opacity: 0.8;
+}
+
+#sm {
+    display: none;
+    text-align: left;
+}
+
+
+
+
+/* .settingsModal{
+    background: rgb(137,255,132);
+    background: linear-gradient(90deg, rgba(137,255,132,1) 5%, rgba(145,255,254,1) 35%, rgba(122,156,255,1) 50%, rgba(238,176,255,1) 65%, rgba(255,112,160,1) 95%);
+    width: 100%;
+} */

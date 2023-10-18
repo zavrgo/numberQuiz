@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Oswald:wght@500&family=Roboto+Mono:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="form" >
+    <!-- <div class="settingsModal"> -->
+        <form action="" class="body" id="sm">
+
+
+            <button id="BackButton"></button>
+
+            <p>выбери уровень:</p>
+            <input type="radio" checked id="lvl1" name="lvl" value="easy">
+            <label for="lvl1">легкий</label><br>
+            <input type="radio" id="lvl2" name="lvl" value="medium">
+            <label for="lvl2">средний</label><br>
+            <input type="radio" id="lvl3" name="lvl" value="hard">
+            <label for="lvl3">сложный</label><br><br>
+
+            <audio controls>
+                <source src="Shostakovich;_Symphony_no._5,_3.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            
+
+            <p>выбери цвет:</p>
+            <input type="radio" checked id="col1" name="color" value="firs">
+            <label for="lvl1">цвет1</label><br>
+            <input type="radio" id="col2" name="color" value="second">
+            <label for="lvl2">цвет2</label><br>
+            <input type="radio" id="col3" name="color" value="third">
+            <label for="lvl3">цвет3</label><br><br>
+            
+        </form>
+    <!-- </div> -->
+    
+    <form action="" class="formWin" id="formWin">
+        <img src="50.jpg" alt="" id="img">
+        <button id="newGame2" type="button">Начать игру</button>
+    </form>
+    <form action="" class="body" id="gameForm">
+        <h1 id="mainTitle">угадай число</h1>
+        <h2 id="lives" class="lives"> </h2>
+        <input type="text" placeholder="введите число!" id="playerInput">
+        <button id="checkButton" class="mainButton">проверить</button>
+        <button id="newGame" type="button" class="mainButton">начать игру</button>
+        <h3 id="rule">вводи число и проверяй!</h3>
+        <div class="info">
+            <button id="settings">⚙️</button>
+            <button>📊</button>
+        </div>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<!-- стили -->
