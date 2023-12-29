@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Oswald:wght@500&family=Roboto+Mono:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Oswald:wght@500&family=Roboto+Mono:wght@400;700&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,53 +12,92 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="form" >
+<body class="form">
     <!-- <div class="settingsModal"> -->
-        <form action="" class="body" id="sm">
+    <form action="" class="body" id="sm">
 
 
-            <button id="BackButton"></button>
+        <button id="BackButton"></button>
 
-            <p>выбери уровень:</p>
-            <input type="radio" checked id="lvl1" name="lvl" value="easy">
-            <label for="lvl1">легкий</label><br>
-            <input type="radio" id="lvl2" name="lvl" value="medium">
-            <label for="lvl2">средний</label><br>
-            <input type="radio" id="lvl3" name="lvl" value="hard">
-            <label for="lvl3">сложный</label><br><br>
+        <p>выбери уровень:</p>
+        <input type="radio" checked id="lvl1" name="lvl" value="лёгкий">
+        <label for="lvl1">легкий</label><br>
+        <input type="radio" id="lvl2" name="lvl" value="средний">
+        <label for="lvl2">средний</label><br>
+        <input type="radio" id="lvl3" name="lvl" value="сложный">
+        <label for="lvl3">сложный</label><br><br>
 
-            <audio controls>
+        <div class="player">
+            <button id="back">⏮️</button>
+            <audio controls class="audio" id="audio">
                 <source src="Shostakovich;_Symphony_no._5,_3.ogg" type="audio/ogg">
-                <source src="horse.mp3" type="audio/mpeg">
                 Your browser does not support the audio tag.
-              </audio>
-            
+            </audio>
 
-            <p>выбери цвет:</p>
-            <input type="radio" checked id="col1" name="color" value="firs">
-            <label for="lvl1">цвет1</label><br>
-            <input type="radio" id="col2" name="color" value="second">
-            <label for="lvl2">цвет2</label><br>
-            <input type="radio" id="col3" name="color" value="third">
-            <label for="lvl3">цвет3</label><br><br>
-            
-        </form>
+            <button id="next">⏭️</button>
+        </div>
+
+
+
+
+        <p>выбери цвет:</p>
+        <input type="radio" checked id="col1" name="color"
+            value="linear-gradient(90deg, rgba(132, 207, 255, 1) 5%, rgba(145, 255, 166, 1) 35%, rgba(255, 198, 122, 1) 50%, rgba(195, 255, 176, 1) 65%, rgba(195, 255, 254, 1) 95%)">
+        <label for="lvl1">цвет1</label><br>
+        <input type="radio" id="col2" name="color"
+            value="linear-gradient(90deg, rgba(137,255,132,1) 5%, rgba(145,255,254,1) 35%, rgba(122,156,255,1) 50%, rgba(238,176,255,1) 65%, rgba(255,112,160,1) 95%)">
+        <label for="lvl2">цвет2</label><br>
+        <input type="radio" id="col3" name="color"
+            value="linear-gradient(90deg, rgba(138,173,0,1) 5%, rgba(255,170,32,1) 35%, rgba(233,56,3,1) 50%, rgba(252,96,194,1) 65%, rgba(255,141,141,1) 95%)">
+        <label for="lvl3">цвет3</label><br><br>
+
+    </form>
     <!-- </div> -->
-    
+
     <form action="" class="formWin" id="formWin">
         <img src="50.jpg" alt="" id="img">
-        <button id="newGame2" type="button">Начать игру</button>
+        <button id="newGame2" type="button" class="mainButton">Начать игру</button>
     </form>
+
+
+
+    <form action="" class="body" id="statsMod">
+        <button id="BackButton1"></button>
+        <h2>История игр</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>дата</th>
+                    <th>секретное число</th>
+                    <th>жизней осталось</th>
+                    <th>время</th>
+                    <th>уровень</th>
+                    <th>использованные числа</th>
+
+                </tr>
+            </thead>
+            <tbody id="tbody">
+              
+            </tbody>
+        </table>
+        <h2>твой уровень</h2>
+        
+    </form>
+
+
+
     <form action="" class="body" id="gameForm">
         <h1 id="mainTitle">угадай число</h1>
         <h2 id="lives" class="lives"> </h2>
         <input type="text" placeholder="введите число!" id="playerInput">
         <button id="checkButton" class="mainButton">проверить</button>
         <button id="newGame" type="button" class="mainButton">начать игру</button>
-        <h3 id="rule">вводи число и проверяй!</h3>
+        <h2 id="rule">вводи число и проверяй!</h2>
+        <h3 id="underRule">числа будут от 0 до 100</h3>
         <div class="info">
             <button id="settings">⚙️</button>
-            <button>📊</button>
+            <button id="stat">📊</button>
         </div>
 
     </form>
@@ -71,4 +113,4 @@
 
 
 
-<!-- стили -->
+<!-- стрелку -->
